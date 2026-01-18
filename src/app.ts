@@ -6,7 +6,9 @@ const app = express();
 
 // http method : get post put patch delete
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to ebook api" });
+  res.json({
+    message: "Welcome to more  and other api",
+  });
 });
 
 export default app;
