@@ -4,6 +4,7 @@ import globalErrorHandler from "./middleware/GlobalErrorHandler.js";
 import userRouter from "./user/userRouter.js";
 
 const app = express();
+app.use(express.json());
 
 // http method : get post put patch delete
 app.get("/", (req, res) => {
