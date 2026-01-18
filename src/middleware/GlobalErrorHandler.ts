@@ -1,4 +1,4 @@
-import type { NextFunction, Request, Response } from "express";
+import type { Request, Response } from "express";
 import type { HttpError } from "http-errors";
 import config from "../config/config.js";
 
@@ -6,7 +6,7 @@ const globalErrorHandler = (
   err: HttpError,
   req: Request,
   res: Response,
-  next: NextFunction,
+  // next: NextFunction,
 ) => {
   const statusCode = err.statusCode;
 
