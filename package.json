@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/rashedulraha/REST-APIs-/issues"
   },
-  "homepage": "https://github.com/rashedulraha/REST-APIs-#readme"
+  "homepage": "https://github.com/rashedulraha/REST-APIs-#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
 }
