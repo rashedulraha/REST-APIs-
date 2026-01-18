@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -13,13 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/rashedulraha/REST-APIs-/issues"
   },
   "homepage": "https://github.com/rashedulraha/REST-APIs-#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.2",
+    "@types/express": "^5.0.6",
     "@types/node": "^25.0.9",
     "eslint": "^9.39.2",
     "globals": "^17.0.0",
@@ -28,5 +30,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
