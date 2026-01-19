@@ -3,17 +3,18 @@ import type { HttpError } from "http-errors";
 import config from "../config/config.js";
 
 const globalErrorHandler = (
-  err: HttpError,
-  req: Request,
-  res: Response,
-  // next: NextFunction,
+    err: HttpError,
+    req: Request,
+    res: Response,
+    // next: NextFunction,
 ) => {
-  const statusCode = err.statusCode;
+    const statusCode = err.statusCode;
+    // return  status code and and json
 
-  return res.status(statusCode).json({
-    message: err.message,
-    errorStack: config.env === "development" ? err.stack : "",
-  });
+    return res.status(statusCode).json({
+        message: err.message,
+        errorStack: config.env === "development" ? err.stack : "",
+    });
 };
 
 export default globalErrorHandler;
