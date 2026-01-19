@@ -29,7 +29,7 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
             return next(error);
         }
     } catch (error) {
-        return next(createHttpError(500, "Error while getting user", error));
+        return next(createHttpError(500, "Error while getting user"));
     }
 
     // ! password hash
